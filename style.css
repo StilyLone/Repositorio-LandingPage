@@ -1,0 +1,87 @@
+body{
+    background-color: lightcyan;
+}
+#card-principal{
+    display: flex;
+    justify-content: center;
+}
+#card-principal > img{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    width: 400px;
+}
+.container-right{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    background-color: white;
+    padding: 30px;
+}
+.container-right > h2{
+    font-size: 1.9em;
+    color: rgba(128, 128, 128, 0.233);
+    font-family: monospace;
+}
+.container-right > h1{
+    font-size: 2.7em;
+}
+.container-right > p{
+    font-family: cursive;
+    width: 300px;
+    line-height: 23px;
+    text-align: justify;
+}
+.interact-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.interact-buttons > p{
+    color: green;
+    font-weight: bolder;
+    font-size: 2.9em;
+}
+.interact-buttons > del{
+    color: rgba(0, 0, 0, 0.445);
+}
+.button-card-principal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    border: 0;
+    text-align: center;
+    width: 400px;
+    padding: 20px;
+
+    transition: all 0.1s ease-in;
+}
+.button-card-principal > img{
+    margin-right: 10px;
+}
+.button-card-principal:hover{
+    background: rgba(0, 128, 0, 0.781);
+}
+
+@media (max-width: 800px){
+    #card-principal{
+        flex-direction: column;
+    }
+    #card-principal > img{
+        width: 450px;
+        height: 570px;
+        margin: auto;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+    .container-right{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        width: 391px;
+        margin: auto;
+    }
+}
